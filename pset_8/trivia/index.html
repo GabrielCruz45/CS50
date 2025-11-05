@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // TODO: Add code to check answers to questions
+            function check1(bool, id)
+            {
+                if (bool == 0)
+                {
+                    document.getElementById(id).style.backgroundColor = 'red';
+                    var myElement = document.getElementById('correctness1');
+                    myElement.textContent = 'Incorrect';
+                    myElement.style.color = 'red';
+
+                }
+                else
+                {
+                    document.getElementById(id).style.backgroundColor = 'green';
+                    var myElement = document.getElementById('correctness1');
+                    myElement.textContent = 'Correct!';
+                    myElement.style.color = 'green';
+                }
+            }
+
+            function check2(id)
+            {
+                var userInputElement = document.getElementById(id);
+                var userInputText = userInputElement.value;
+                if (userInputText == 'Accra' || userInputText == 'accra')
+                {
+                    document.getElementById(id).style.backgroundColor = 'Green';
+                    var myElement = document.getElementById('correctness2');
+                    myElement.textContent = 'Correct!';
+                    myElement.style.color = 'Green';
+                }
+                else
+                {
+                    document.getElementById(id).style.backgroundColor = 'red';
+                    var myElement = document.getElementById('correctness2');
+                    myElement.textContent = 'Incorrect';
+                    myElement.style.color = 'Red';
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <!-- TODO: Add multiple choice question here -->
+                <h3>Which city is the capital of Paraguay?</h3>
+                <div>
+                    <button id="1" onclick="check1(0, this.id)">Santiago</button>
+                    <button id="2" onclick="check1(0, this.id)">Montevideo</button>
+                    <button id="3" onclick="check1(0, this.id)">Quito</button>
+                    <button id="4" onclick="check1(1, this.id)">Asunción</button>
+                    <button id="5" onclick="check1(0, this.id)">Managua</button>
+                    <p id="correctness1"></p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <!-- TODO: Add free response question here -->
+                <h3>Which is the capital city of Ghana?</h3>
+                <input id="userInput" type="text">
+                <button onclick="check2('userInput');">Confirm</button>
+                <p id="correctness2"></p>
+            </div>
+        </div>
+    </body>
+</html>

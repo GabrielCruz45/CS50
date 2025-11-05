@@ -1,0 +1,29 @@
+sort1 uses: Bubble Sort
+
+How do you know?:
+
+sort1 + sorted50000
+time 0.005s
+
+By far the lowest time a sorting algorithm took whilst sorting a big ordered set of numbers.
+It took 'Big Omega (n)'.
+
+
+
+
+sort2 uses: Merge Sort
+
+sort2 + sorted50000
+time 0.883s
+
+How do you know?: It had a really low time ordering a random relatively small set of numbers compared to the sort3 program.
+
+
+
+sort3 uses: Selection Sort
+
+sort3 + sorted50000
+time 0.395s
+
+How do you know?: The other sorting algorithms have been detected.
+Also, it took more time than the merge sort algorithm to order a relatively small random set of numbers.

@@ -1,0 +1,81 @@
+airports                crime_scene_reports         people
+atm_transactions        flights                     phone_calls
+bakery_security_logs    interviews
+bank_accounts           passangers
+
+Crime took place at 10:15am on the 28th of july of 2021
+There's a littering report from the same day
+
+
+Witnessess:
+Ruth:
+    After 10 min of theft, thief got into car in bakery parking. Look for bakery footage.
+
+Eugene:
+    Thief was withdrawing money on ATM on Leggett Street in the same morning before robbery.
+    Eugene recognizes thief.
+
+Raymond:
+    Thief was planning w/someone else leaving Fiftyville earliest flight the next day.
+    Other person was asked to purchase flight ticket.
+
+    Possible destinations:
+        O'Hare International Airport Chicago
+        LaGuardia Airport            New York City
+        Logan International Airport  Boston
+        Tokyo International Airport
+        San Fransisco International Airport
+    He/She also called that day
+
+Suspects
+Earliest flight passangers
+Kenny
+Sofia
+Taylor
+Luca
+Kelsey
+Edward
+Bruce
+Doris
+
+
+Phone number
+Kenny
+Sofia
+Benista
+Taylor
+Diana
+Kelsey
+Kathryn
+Bruce
+Carina
+
+Passport Number
+Kenny
+Sofia
+Taylor
+Luca
+Kelsey
+Edward
+Bruce
+Doris
+
+License Plate
+Vanessa
+Barry
+Iman
+Sofia
+Luca
+Diana
+Kelsey
+Bruce
+
+Id
+Kenny
+Iman
+Benista
+Taylor
+Brooke
+Luca
+Diana
+Bruce

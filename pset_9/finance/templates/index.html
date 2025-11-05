@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio of {{ username }}
+{% endblock %}
+
+{% block main %}
+    {% if userPortfolio %}
+        {% for stocks in userPortfolio %}
+            {% for key, value in stocks.items() %}
+                <p>
+                    <thead class="centered">
+                        <tr>
+                            <th>{{ key | upper }}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{ value[0] | int }}</td>
+                            <td>{{ value[1] | usd }}</td>
+                            <td>{{ value[2] | usd }}</td>
+                        </tr>
+                    </tbody>
+                </p>
+            {% endfor %}
+        {% endfor %}
+    {% endif %}
+    <p class="centered">Current cash balance: {{ cashOnHand | usd }}</p>
+    <p class="centered">Total Sum (cash + holdings): {{ totalSum | usd }}</p>
+
+{% endblock %}

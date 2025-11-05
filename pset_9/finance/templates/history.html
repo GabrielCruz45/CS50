@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+
+    {% if userHistory %}
+        <table class="centered">
+            <thead>
+                <tr>
+                    <th>Stock Symbol</th>
+                    <th>Shares Quantity</th>
+                    <th>Share Price</th>
+                    <th>Time and Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for entries in userHistory %}
+                    <tr>
+                        {% for key, value in entries.items() %}
+                            <td>
+                                {% if key == "stock_symbol" %}
+                                    {{ value }}
+                                {% elif key == "share_price" %}
+                                    {{ value | usd }}
+                                {% else %}
+                                    {{ value }}
+                                {% endif %}
+                            </td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+{% endblock %}

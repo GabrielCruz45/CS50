@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <input name="symbol" type="text" minlength="1" maxlength="5" placeholder="Stock">
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if stockLookup %}
+            <table class="centered">
+                {% for key, value in stockLookup.items() %}
+                    <thead>
+                        <tr>
+                            <th>{{ key }}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% if key == 'price'%}
+                            <tr>
+                                <td>{{ value | usd }}</td>
+                            </tr>
+                        {% else %}
+                            <tr>
+                                <td>{{ value }}</td>
+                            </tr>
+                        {% endif %}
+                    </tbody>
+                {% endfor %}
+            </table>
+    {% endif %}
+
+{% endblock %}

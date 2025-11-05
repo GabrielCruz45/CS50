@@ -1,0 +1,14 @@
+If songs.db contains the top 100 songs of one listener from 2018, how would you characterize their audio aura?
+
+    After calculating averages, I would compare these numbers with the descrption provided by Spotify.
+    For example a 'Yellow' aura listener based on those descriptions and parameters, in my opinion,
+    would have mid to mid-high energy, mid to mid-high valence and mid danceability.
+
+Hypothesize about why the way you’ve calculated this aura might not be very representative of the listener.
+What better ways of calculating this aura would you propose?
+
+    With the other parameters inside the database,
+    we can more accurately characterize the listener's preferences and
+    put them in a category better suited for them.
+    Also in an extreme or edge case create a new category if said combinations
+    of parameter average values is not yet represented by spotify's margins.
